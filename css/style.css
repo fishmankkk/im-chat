@@ -1,0 +1,397 @@
+html,body{margin: 0;height: 100%;width: 100%;overflow: hidden;}
+.im{min-width: 500px;}
+/*主题绿色*/
+.green-theme .im .im-head-banner,
+.green-theme .im .im-body .width-100 .top-service .head-img,
+.green-theme .im .im-body .width-100 .bottom-btn-list button.send-btn,
+.green-theme .im .im-body .width-100 .bottom-btn-list button.close-btn,
+.green-theme .im .im-body .width-100 .bottom-btn-list button.choose-send-way-btn,
+.green-theme .im .select-key-way button,
+.green-theme .im  ul.chat-list li .avatar-icon,
+.green-theme .im-mobile .top-header,
+.green-theme .im-mobile ul.chat-list li .avatar-icon,
+.green-theme .im-mobile .bottom-input .mobile-send{
+    background-color: #1ab394;
+}
+.green-theme .im-mobile  .bottom-input{
+    border-color: #1ab394;
+}
+.green-theme .im .im-body .width-100 .bottom-btn-list button.close-btn{
+    opacity: 0.65;
+}
+.green-theme .im .qqFace table td img:hover{border:1px #1ab394 solid;}
+/*主题黄色*/
+.yellow-theme .im .im-head-banner,
+.yellow-theme .im .im-body .width-100 .top-service .head-img,
+.yellow-theme .im .im-body .width-100 .bottom-btn-list button.send-btn,
+.yellow-theme .im .im-body .width-100 .bottom-btn-list button.close-btn,
+.yellow-theme .im .im-body .width-100 .bottom-btn-list button.choose-send-way-btn,
+.yellow-theme .im .select-key-way button,
+.yellow-theme .im ul.chat-list li .avatar-icon,
+.yellow-theme .im-mobile .top-header,
+.yellow-theme .im-mobile ul.chat-list li .avatar-icon,
+.yellow-theme .im-mobile .bottom-input .mobile-send{
+    background-color: #FF9800;
+}
+.yellow-theme .im-mobile .bottom-input{
+    border-color: #FF9800;
+}
+.yellow-theme .im .im-body .width-100 .bottom-btn-list button.close-btn{
+    opacity: 0.65;
+}
+.yellow-theme .im .qqFace table td img:hover{border:1px #FF9800 solid;}
+/*主题蓝色*/
+.blue-theme .im .im-head-banner,
+.blue-theme .im .im-body .width-100 .top-service .head-img,
+.blue-theme .im .im-body .width-100 .bottom-btn-list button.send-btn,
+.blue-theme .im .im-body .width-100 .bottom-btn-list button.close-btn,
+.blue-theme .im .im-body .width-100 .bottom-btn-list button.choose-send-way-btn,
+.blue-theme .im .select-key-way button,
+.blue-theme .im ul.chat-list li .avatar-icon,
+.blue-theme .im-mobile .top-header,
+.blue-theme .im-mobile ul.chat-list li .avatar-icon,
+.blue-theme .im-mobile .bottom-input .mobile-send{
+    background-color: #03A9F4;
+}
+.blue-theme .im-mobile .bottom-input{
+    border-color:  #03A9F4;
+}
+.blue-theme .im .im-body .width-100 .bottom-btn-list button.close-btn{
+    opacity: 0.65;
+}
+.blue-theme .im .qqFace table td img:hover{border:1px #03A9F4 solid;}
+/*主题红色*/
+.red-theme .im .im-head-banner,
+.red-theme .im .im-body .width-100 .top-service .head-img,
+.red-theme .im .im-body .width-100 .bottom-btn-list button.send-btn,
+.red-theme .im .im-body .width-100 .bottom-btn-list button.close-btn,
+.red-theme .im .im-body .width-100 .bottom-btn-list button.choose-send-way-btn,
+.red-theme .im .select-key-way button,
+.red-theme .im ul.chat-list li .avatar-icon,
+.red-theme .im-mobile .top-header,
+.red-theme .im-mobile ul.chat-list li .avatar-icon,
+.red-theme .im-mobile .bottom-input .mobile-send{
+    background-color: #F44336;
+}
+.red-theme .im-mobile .bottom-input{
+    border-color:  #F44336;
+}
+.red-theme .im .im-body .width-100 .bottom-btn-list button.close-btn{
+    opacity: 0.65;
+}
+.red-theme .im .qqFace table td img:hover{border:1px #F44336 solid;}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.im .im-head-banner {
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.im .im-head-banner img{
+    height: 100%;
+    width: auto;
+}
+.im .im-body{
+    padding-top: 40px;
+    position: relative;
+}
+.width-100{
+    width: 100%;
+}
+.im .im-body .width-25{
+    width: 25%;
+}
+.im .im-body .width-100 .top-service{
+    height: 40px;
+    background-color: #efefef;
+}
+.im .im-body .width-100 .top-service .head-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 34px;
+    text-align: center;
+    line-height: 60px;
+    overflow: hidden;  
+    top: 8px;
+    position: absolute;
+    left: 10px;
+    border: 2px solid #fff;
+    -webkit-user-select: none;
+}
+.im .im-body .width-100 .top-service .head-img img{width: 100%;}
+.im .im-body .width-100 .top-service span{
+    margin-left: 80px;
+    line-height: 40px;
+}
+.im .im-body .width-100 .chat-history-body{
+    min-height: 100px;
+    overflow-y: auto
+}
+.im .im-body .width-100 .chat-tool-btn-list{
+    height: 40px;
+    background-color: #faf5f5;
+    border-top: 1px solid #ddd;
+}
+.im .im-body .width-100 .chat-tool-btn-list .btn{
+    height: 24px;
+    padding: 8px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+.im .im-body .width-100 .chat-tool-btn-list .btn:hover{
+    background-color: #e3e3e3;
+}
+.im .im-body .width-100 .chat-tool-btn-list img{
+    height: 100%;
+}
+.im .im-body .width-100 .chat-tool-btn-list .a-upload{
+    
+}
+.a-upload {
+    padding: 8px;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    position: relative;
+    cursor: pointer;
+    color: inherit;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.a-upload:hover {
+    background-color: #e3e3e3;
+}
+.im .im-body .width-100 .editor-body{
+    height: 150px;
+}
+.im .im-body .width-100 .editor-body textarea{
+    width: 100%;
+    height: 100%; 
+    resize: none;
+    border: transparent;   
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+    box-sizing: border-box;
+
+}
+.im .im-body .width-100 .bottom-btn-list{
+    height: 40px;
+    background-color: #faf5f5;
+}
+.im .im-body .width-100 .bottom-btn-list button{
+    border: 0px;
+    color: #fff;
+    margin: 5px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+.im .im-body .width-100 .bottom-btn-list button:hover{
+    opacity: 0.7;
+}
+/*聊天框*/
+.chat-history-body ul.chat-list{
+    padding: 0 10px;
+}
+ul.chat-list li{
+    list-style-type: none;
+}
+ul.chat-list li .avatar-icon{
+    width: 42px;
+    height: 42px;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 4px;
+    text-align: center;
+    -webkit-user-select: none;
+}
+.chat-list li .avatar-icon img{
+    width: 100%;
+}
+li .msg-con .msg-angle {
+    position: absolute;
+    font-size: 0px;
+    line-height: 0;
+    border-width: 4px;
+    border-style: solid;
+}
+li .msg-con .msg-item {
+    word-wrap: break-word;
+}
+li .msg-con .msg-item img{
+    max-width: 200px;
+}
+li .msg-con {
+    position: relative;
+    max-width: 80%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+li.left-chat .msg-con {
+    margin-left: 10px;    
+}
+li.right-chat .msg-con {
+    margin-right: 10px;    
+}
+.border-color-angle1 {
+    border-color: rgb(213, 208, 208) rgb(213, 208, 208) rgb(255, 255, 255) rgb(255, 255, 255);
+}
+.bg1 {
+    background-color: rgb(213, 208, 208);
+    color: rgb(0, 0, 0);
+    border-color: rgb(213, 208, 208);
+}
+li.left-chat .msg-angle {
+    left: -9px;
+    top: 6px;
+}
+.border-color-angle2 {
+    border-color: #03A9F4 rgb(255, 255, 255) rgb(255, 255, 255) #03A9F4;
+}
+.bg2 {
+    background-color: #03A9F4;
+    color: #fff;
+    border-color: #03A9F4;
+}
+li.right-chat .msg-angle {
+    right: -9px;
+    top: 6px;
+}
+
+.qqFace table td img{cursor:pointer;border:1px #fff solid;}
+.qqFace table td img:hover{border:1px #0066cc solid;}
+
+.im .im-body .width-100 .bottom-btn-list button.choose-send-way-btn{
+    border-radius: 0 5px 5px 0;
+    margin: 5px 5px 5px 0;
+    width: 20px;
+    margin-left: 1px;
+}
+.bottom-btn-list .choose-send-way-btn img{
+    width: 10px;
+}
+.select-key-way{
+    position: absolute;
+    bottom: 35px;
+    right: 5px;
+    width: 160px;
+}
+.select-key-way button{
+    width: 160px;
+    background-color: #03a9f4;
+    border-color: transparent;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.select-key-way button:hover{
+    opacity: 0.8;
+}
+.select-key-way button.way-btn-send1{
+    border-radius: 5px 5px 0 0;  
+    margin-bottom: 1px;
+}
+
+
+/*移动端*/
+.im-mobile{height: 100%;}
+.im-mobile .top-header{
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+}
+.im-mobile .top-header img{
+    height: 100%;
+    box-sizing:border-box;
+    padding: 10px;
+}
+.im-mobile .top-header .kefu-name{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    line-height: 50px;
+    color: #fff;
+    width: 100%;
+}
+.im-mobile .im-chat-body{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 60px 0;
+    top: 0px;
+    overflow-y: auto;
+}
+.im-mobile .im-chat-body .chat-list{
+    margin-left: 0px;
+    padding: 0 5px;
+}
+.im-mobile .bottom-input{
+    bottom: 0px;
+    height: 50px;
+    border-top: 2px solid #000;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+}
+.im-mobile li .msg-con {
+    max-width: 65%;
+}
+.im-mobile .bottom-input .a-upload {
+    padding: 13px;
+}
+.im-mobile .bottom-input .mobile-input{
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    left: 0px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    top: 5px;
+    border-color: transparent;
+    font-size: 18px;
+}
+.im-mobile .bottom-input .mobile-send{
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    border-color: transparent;
+    color: #fff;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    top: 5px;
+}
+.im-mobile .a-upload:hover {
+    background-color: #fff;
+}

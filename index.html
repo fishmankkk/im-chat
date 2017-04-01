@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=false,minimum-scale=1">
+<title>IM</title>
+<link rel="stylesheet" href="css/zoom.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="blue-theme">
+<div class="im" style="display: none;">
+    <div class="im-head-banner">
+        <img src="img/logo.png">
+    </div>
+    <div class="im-body">
+        <div class="im-chat float-left width-100">
+            <div class="top-service">
+                <div class="head-img"><img src="img/kefu.png"></div>
+                <span class="">小助手（在线客服）</span>
+            </div>
+            <div class="chat-history-body">
+                <ul class="chat-list">
+                    <li class="left-chat float-left width-100">
+                        <div class="avatar-icon float-left"><img src="img/kefu.png"></div>
+                        <div class="msg-con bg1 float-left">
+                            <i class="msg-angle border-color-angle1"></i>
+                            <div class="msg-item bg1">Hi，我是小助手，为您服务是小助手的荣幸~~ </div>
+                        </div>
+                    </li>
+                    
+                    <li class="right-chat float-right width-100">
+                        <div class="avatar-icon float-right"><img src="img/user.png"></div>
+                        <div class="msg-con bg2 float-right">
+                            <i class="msg-angle border-color-angle2"></i>
+                            <div class="msg-item bg2"><img src="img/apply_page_bg.jpg" data-action="zoom"></div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="chat-tool-btn-list">
+                <div class="smile-btn btn float-left"><img src="img/Smile.png"></div>
+                <form action="/cube/cubeTemplate/uploadCover.action" method="post" enctype="multipart/form-data" id="attachmentForm" onsubmit="return uploadAttachmenta()" class="pull-left" style="margin-left: 10px;">
+                    <a href="javascript:;" class="a-upload">
+                        <input type="file" id="attFile" name="file" onchange="changeFile(this)"><img src="img/pic.png">
+                    </a>
+                    <input type="submit" id="img-local-submit" class="pull-left" style="display: none;">
+                </form>
+<!--                <div class="pic-btn btn float-left"><img src="img/pic.png"></div>-->
+<!--                <div class="hreat-btn btn float-left"><img src="img/favorites.png"></div>-->
+            </div>
+            <div class="editor-body">
+                <textarea id="saytext" name="saytext" onkeydown= "keydownSendFunc();"></textarea>
+            </div>
+            <div class="bottom-btn-list">
+                <button class="choose-send-way-btn float-right" style=""><img src="img/up.png"></button>
+                <button class="send-btn float-right" title="ctrl+enter" style="margin-right: 0px;border-radius: 5px 0 0 5px;">发送</button>
+                <button class="close-btn float-right">关闭</button>
+            </div>
+        </div>
+    </div>
+    <div class="select-key-way" style="display:none;">
+        <button class="way-btn-send1">按下ENTER发送</button>
+        <button class="way-btn-send2">按下CTRL+ENTER发送(√)</button>
+    </div>
+</div>
+<div class="im-mobile">
+    <header class="top-header">
+        <img src="img/logo.png">
+        <div class="kefu-name">小助手</div>
+    </header>
+    <div class="im-chat-body">
+        <ul class="chat-list">
+            <li class="left-chat float-left width-100">
+                <div class="avatar-icon float-left"><img src="img/kefu.png"></div>
+                <div class="msg-con bg1 float-left">
+                    <i class="msg-angle border-color-angle1"></i>
+                    <div class="msg-item bg1">Hi，我是小助手，为您服务是小助手的荣幸~~ </div>
+                </div>
+            </li>
+
+            <li class="right-chat float-right width-100">
+                <div class="avatar-icon float-right"><img src="img/user.png"></div>
+                <div class="msg-con bg2 float-right">
+                    <i class="msg-angle border-color-angle2"></i>
+                    <div class="msg-item bg2"><img src="img/apply_page_bg.jpg" data-action="zoom"></div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <footer class="bottom-input">
+        <form action="/cube/cubeTemplate/uploadCover.action" method="post" enctype="multipart/form-data" id="attachmentForm" onsubmit="return uploadAttachmenta()" class="float-left" style="position: absolute;z-index: 2;">
+            <a href="javascript:;" class="a-upload">
+                <input type="file" id="attFile" name="file" onchange="changeFile(this)"><img src="img/pic.png" style="width: 100%;">
+            </a>
+            <input type="submit" id="img-local-submit" class="pull-left" style="display: none;">
+        </form>
+        <input type="text" class="mobile-input" onfocus="setStyle()">
+        <button class="mobile-send">发送</button>
+    </footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/transition.js"></script>
+<script src="js/jquery.qqFace.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
